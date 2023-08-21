@@ -8,7 +8,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindSum() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedSum = 180;
         int actualSum = service.getSum(sales);
 
@@ -18,7 +18,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindAverage() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedAverage = 15;
         int actualAverage = service.getAverage(sales);
 
@@ -28,7 +28,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindMaxSales() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMaxMonth = 8;
         int actualMaxMonth = service.maxSales(sales);
 
@@ -38,7 +38,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindMinSales() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedMinMonth = 9;
         int actualMinMonth = service.minSales(sales);
 
@@ -48,7 +48,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindLessAverage() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedCount = 5;
         int actualCount = service.lessAverage(sales);
 
@@ -58,7 +58,7 @@ public class StatsServiceTest {
     @Test
     public void shouldFindMoreAverage() {
         StatsService service = new StatsService();
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expectedCount = 5;
         int actualCount = service.moreAverage(sales);
 
